@@ -54,6 +54,9 @@ Gestiona la lista enlazada de contactos.
 
 ---
 
+**<img width="1177" height="891" alt="image" src="https://github.com/user-attachments/assets/498e0981-2bb0-48eb-bb75-b94c469d887b" />
+<img width="1198" height="891" alt="image" src="https://github.com/user-attachments/assets/5d726a00-6206-4d91-9f63-bf1c5884afb2" />**
+
 ## Ejemplo de Uso
 
 ```javascript
@@ -73,8 +76,3 @@ agenda.eliminarContacto("María López");
 
 // Mostrar contactos después de eliminar
 agenda.mostrarContactos();
-
-
-<img width="1177" height="891" alt="image" src="https://github.com/user-attachments/assets/498e0981-2bb0-48eb-bb75-b94c469d887b" />
-<img width="1198" height="891" alt="image" src="https://github.com/user-attachments/assets/5d726a00-6206-4d91-9f63-bf1c5884afb2" />
-
