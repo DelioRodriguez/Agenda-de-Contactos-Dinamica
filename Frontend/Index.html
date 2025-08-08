@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Agenda de Contactos</title>
+</head>
+<body class="bg-blue-50 min-h-screen flex items-center justify-center">
+
+<div class="w-full max-w-4xl bg-white shadow-lg rounded-lg p-6">
+    <h1 class="text-3xl font-bold text-blue-600 mb-6 text-center">Agenda de Contactos</h1>
+
+    <div class="flex justify-end mb-4">
+        <button id="btnAgregar" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded shadow">
+            ➕ Nuevo Contacto
+        </button>
+    </div>
+
+    <div class="overflow-x-auto">
+        <table class="min-w-full text-left border border-gray-200 rounded-lg">
+            <thead class="bg-blue-600 text-white">
+            <tr>
+                <th class="py-2 px-4">Nombre</th>
+                <th class="py-2 px-4">Teléfono</th>
+                <th class="py-2 px-4">Email</th>
+                <th class="py-2 px-4 text-center">Acciones</th>
+            </tr>
+            </thead>
+            <tbody id="tablaContactos" class="bg-white divide-y divide-gray-200"></tbody>
+        </table>
+    </div>
+</div>
+
+<div id="modalContacto" class="fixed inset-0 bg-black bg-opacity-50 hidden justify-center items-center">
+    <div class="bg-white w-full max-w-md rounded-lg p-6 shadow-lg">
+        <h2 id="modalTitulo" class="text-2xl font-bold text-blue-600 mb-4">Nuevo Contacto</h2>
+        <label for="nombre"></label><input id="nombre" class="border p-2 w-full mb-2 rounded" placeholder="Nombre">
+        <label for="telefono"></label><input id="telefono" class="border p-2 w-full mb-2 rounded" placeholder="Teléfono">
+        <label for="email"></label><input id="email" class="border p-2 w-full mb-4 rounded" placeholder="Email">
+
+        <div class="flex justify-end gap-2">
+            <button id="btnCancelar" class="bg-gray-400 hover:bg-gray-500 text-white px-4 py-2 rounded">Cancelar
+            </button>
+            <button id="btnGuardar" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded">Guardar</button>
+        </div>
+    </div>
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
